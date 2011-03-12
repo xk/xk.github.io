@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="generator" content="TextMate http://macromates.com/">
+    <meta name="author" content="Jorge@jorgechamorro.com">
+    <title>Jorge @ github.com</title>
+  </head>
+  <style>
+    body { margin:0; padding: 0; overflow:hidden; background-color:#000000}
+  </style>
+  <script>
+    window.onload= function () {
+      var video= document.getElementById('video');
+      
+      (window.onresize= function resize () {
+        video.height= video.width= 1;
+        
+        var width= window.innerWidth;
+        var height= window.innerHeight;
+
+        video.height= height;
+        video.width= width;
+      })();
+      
+      setTimeout(function () {
+        video.src= "http://ecn.channel9.msdn.com/o9/mix/10/mp4/EX39.mp4";
+      }, 555);
+    };
+  </script>
+  <body>
+    <video controls="" id="video" poster="EX39_poster.jpg"></video>
+  </body>
+</html>
