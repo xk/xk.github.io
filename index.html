@@ -20,15 +20,16 @@
         
         video.height= window.innerHeight;
         video.width= window.innerWidth;
-        video.style.display= "";
       })();
       
       setTimeout(function () {
         video.src= "http://ecn.channel9.msdn.com/o9/mix/10/mp4/EX39.mp4";
-      }, 555);
+      }, 2e3);
+      
+      video.style.cssText= "-webkit-transition-property:opacity; -webkit-transition-duration:2s; opacity:1.0;";
     };
   </script>
   <body>
-    <video controls="" id="video" poster="EX39_poster.jpg" style="display:none;"></video>
+    <video controls="" id="video" poster="EX39_poster.jpg" style="opacity:0.0"></video>
   </body>
 </html>
