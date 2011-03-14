@@ -16,11 +16,10 @@
       (window.onresize= function resize () {
         video.height= video.width= 1;
         
-        var width= window.innerWidth;
-        var height= window.innerHeight;
-
-        video.height= height;
-        video.width= width;
+        var reflow= video.offsetHeight+ video.offsetWidth;
+        
+        video.height= window.innerHeight;
+        video.width= window.innerWidth;
       })();
       
       setTimeout(function () {
